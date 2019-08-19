@@ -1,0 +1,37 @@
+[data-tooltip] {
+    text-decoration: underline;
+    font-weight: bold;
+    color: red;
+    cursor: default;
+}
+
+#tooltip {
+    position: absolute;
+    background-color: grey;
+}
+
+
+.tooltip {
+    display: inline;
+    text-decoration: underline;
+    color: red;
+    font-weight: bold;
+    cursor: default;
+}
+
+.tooltip-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 100%;
+    background-color: grey;
+}
+.tooltip:hover {
+    position: relative
+}
+
+.tooltip:hover .tooltip-content {
+    display: block;
+}
